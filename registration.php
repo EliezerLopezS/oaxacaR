@@ -52,7 +52,7 @@
                               <div class="col-xs-12 col-sm-6">
                                 <div class="form-group label-floating">
                                   <label class="control-label"><i class="fa fa-mobile"></i>&nbsp; Ingrese su número telefónico</label>
-                                    <input class="form-control" type="tel" required name="clien-phone" maxlength="15" title="Ingrese su número telefónico. Mínimo 8 digitos máximo 15">
+                                    <input class="form-control" type="number" required name="clien-phone" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"maxlength="10" patterntitle="Ingrese su número telefónico. Mínimo 8 digitos máximo 15">
                                 </div>
                               </div>
                               <div class="col-xs-12 col-sm-6">
