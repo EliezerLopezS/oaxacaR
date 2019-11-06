@@ -39,7 +39,7 @@
                           <a href="registration.php" class="table-cell-td">Registro</a>
                               <a href="#" class="table-cell-td" data-toggle="modal" data-target=".modal-login">
                                   <i class="fa fa-user"></i>&nbsp;&nbsp;Login
-                              </a>
+                              </a>  
                            ';
                       }
                   ?>
@@ -89,11 +89,11 @@
             <form action="process/login.php" method="post" role="form" class="FormCatElec" data-form="login">
                 <div class="form-group label-floating">
                     <label class="control-label"><span class="glyphicon glyphicon-user"></span>&nbsp;Nombre</label>
-                    <input type="text" class="form-control" name="nombre-login" required="">
+                    <input type="text" class="form-control" name="nombre-login" required="" maxlength="30">
                 </div>
                 <div class="form-group label-floating">
                     <label class="control-label"><span class="glyphicon glyphicon-lock"></span>&nbsp;Contraseña</label>
-                    <input type="password" class="form-control" name="clave-login" required="">
+                    <input type="password" class="form-control" name="clave-login" required="" maxlength="120">
                 </div>
 
                 <p>¿Cómo iniciaras sesión?</p>
