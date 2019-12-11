@@ -41,6 +41,8 @@
                                         </tbody>";
                                 $suma += $pref*$codeProd['cantidad'];
                                 $sumaA += $codeProd['cantidad'];
+                                session_start();
+                                $_SESSION['var']=$suma;
                                 }
                                 mysqli_free_result($consulta);
                             }

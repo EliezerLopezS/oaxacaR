@@ -21,13 +21,13 @@
                 <img src="./assets/img/slider1.jpg" alt="slider1" >
                 <div class="carousel-caption">
                   <span class="tittles-pages-logo" size=30>Mujer Oaxaqueña </span> <small style="color: #fff;"></small></h1>
-      <p>
-          Artesania Milenaria
-      </p>
+                    <p>
+                        Artesania Milenaria
+                    </p>
                 </div>
             </div>
             <div class="item">
-                <img src="./assets/img/slider2.jpg" alt="slider2" >
+                <img src="./assets/img/slider3.png" alt="slider2" >
                 <div class="carousel-caption">
                   <span class="tittles-pages-logo" size=30>  El arte de ser Oaxaqueño 
                 </div>
