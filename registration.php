@@ -29,7 +29,9 @@
                             <div class="row">
                               <div class="col-xs-12">
                                 <legend><i class="fa fa-user"></i> &nbsp; Datos personales</legend>
+                                
                               </div>
+                              <br><br>
                               <div class="col-xs-12">
                                 <div class="form-group label-floating">
                                   <label class="control-label"><i class="fa fa-address-card-o" aria-hidden="true"></i>&nbsp; Ingrese su CURP</label>

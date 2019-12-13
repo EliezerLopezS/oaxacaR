@@ -14,7 +14,7 @@ include './library/consulSQL.php';
        <br>
         <div class="container">
             <div class="page-header">
-              <h1>PRODUCTOS <small class="tittles-pages-logo">OAXACA TRADICIONAL</small></h1>
+              <h3>PRODUCTOS <small class="tittles-pages-logo">OAXACA TRADICIONAL</small></h3>
             </div>
             <?php
               $checkAllCat=ejecutarSQL::consultar("SELECT * FROM categoria");
@@ -79,7 +79,7 @@ include './library/consulSQL.php';
                   $numeropaginas = ceil($totalregistros["FOUND_ROWS()"]/$regpagina);
 
                   if(mysqli_num_rows($consultar_productos)>=1){
-                    echo '<h3 class="text-center">Se muestran los productos de la categoría <strong>"'.$datCat['Nombre'].'"</strong></h3><br>';
+                    echo '<h4 class="text-center">Se muestran los productos de la categoría <strong>"'.$datCat['Nombre'].'"</strong></h4><br>';
                     while($prod=mysqli_fetch_array($consultar_productos, MYSQLI_ASSOC)){
                 ?>
                     <div class="col-xs-12 col-sm-6 col-md-4">
@@ -157,16 +157,16 @@ include './library/consulSQL.php';
                 <?php
                   endif;
                   }else{
-                    echo '<h2 class="text-center">Lo sentimos, no hay productos registrados en la categoría <strong>"'.$datCat['Nombre'].'"</strong></h2>';
+                    echo '<h4 class="text-center">Lo sentimos, no hay productos registrados en la categoría <strong>"'.$datCat['Nombre'].'"</strong></h4>';
                   }
                 ?>
               </div>
             <?php
                 }else{
-                  echo '<h2 class="text-center">Por favor seleccione una categoría para empezar</h2>';
+                  echo '<h4 class="text-center">Por favor seleccione una categoría para empezar</h4>';
                 }
               else:
-                echo '<h2 class="text-center">Lo sentimos, no hay productos ni categorías registradas en la tienda</h2>';
+                echo '<h4 class="text-center">Lo sentimos, no hay productos ni categorías registradas en la tienda</h4>';
               endif;
             ?>
         </div>

@@ -4,7 +4,7 @@
     include '../library/consulSQL.php';
 
     $nombre=consultasSQL::clean_string($_POST['nombre-login']);
-    $clave=consultasSQL::clean_string(md5($_POST['clave-login']));
+    $clave=consultasSQL::clean_string(($_POST['clave-login']));
     $radio=consultasSQL::clean_string($_POST['optionsRadios']);
     if($nombre!="" && $clave!=""){
         if($radio=="option2"){

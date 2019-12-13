@@ -2,7 +2,7 @@
     session_start(); 
     error_reporting(E_PARSE);
 ?>
-<nav id="navbar-auto-hidden">
+<nav id="navbar-auto-hidden" class="navbar-expand navbar-warning bg-dark">
         <div class="row hidden-xs">
             <div class="col-xs-4">
                 <p class="text-navbar tittles-pages-logo">Oaxaca Tradicional</p>

@@ -5,11 +5,18 @@
     <?php include './inc/link.php'; ?>
 </head>
 <body id="container-page-index">
+<?php 
+$productName = "Producto Demostración";
+$currency = "USD";
+$productPrice = 25;
+$productId = 123456;
+$orderNumber = 546;
+?>
     <?php include './inc/navbar.php'; ?>
     <section id="container-pedido">
         <div class="container">
             <div class="page-header">
-              <h1>PEDIDOS <small class="tittles-pages-logo">OAXACA TRACIONAL</small></h1>
+              <h4>PEDIDOS <small class="tittles-pages-logo">OAXACA TRACIONAL</small></h4>
             </div>
             <br><br><br>
             <div class="row">
@@ -19,7 +26,8 @@
                   require_once "library/consulSQL.php";
                   if($_SESSION['UserType']=="Admin" || $_SESSION['UserType']=="User"){
                     if(isset($_SESSION['carro'])){
-                ?>
+                      
+                      ?>
                       <br><br><br>
                       <div class="container-fluid">
                         <div class="row">
@@ -29,9 +37,37 @@
                             <p class="text-center">
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<<<<<<< HEAD
+                      
+                                    <input type="hidden" name="cmd" value="_cart">
+                                    <input type="hidden" name="upload" value="1">
+                                    <input type="hidden" name="business" value="seller@dezignerfotos.com">
+                                    <input type="hidden" name="item_name_1" value="Item Name 1">
+                                    <input type="hidden" name="amount_1" value="1.00">
+                                    <input type="hidden" name="shipping_1" value="1.75">
+                                    <input type="hidden" name="item_name_2" value="Item Name 2">
+                                    <input type="hidden" name="amount_2" value='200'>
+                                    <input type="hidden" name="shipping_2" value="2.50">
+                                    <input type="submit" class="btn btn-lg btn-raised btn-success btn-block" value="Paypal">
+                            </form>             
+=======
+                      <input type="hidden" name="cmd" value="_cart">
+                      <input type="hidden" name="upload" value="1">
+                      <input type="hidden" name="business" value="seller@dezignerfotos.com">
+                      <input type="hidden" name="item_name_1" value="Item Name 1">
+                      <input type="hidden" name="amount_1" value="1.00">
+                      <input type="hidden" name="shipping_1" value="1.75">
+                      <input type="hidden" name="item_name_2" value="Item Name 2">
+                      <input type="hidden" name="amount_2" value='200'>
+                      <input type="hidden" name="shipping_2" value="2.50">
+                      <input type="submit" class="btn btn-lg btn-raised btn-success btn-block" value="Paypal">
+              </form>  
+>>>>>>> master
                           </div>
                         </div>
                       </div>
+                      
                 <?php
                     }else{
                       echo '<p class="text-center lead">No tienes pedidos pendientes de pago</p>';
@@ -49,7 +85,7 @@
         ?>
             <div class="container" style="margin-top: 70px;">
               <div class="page-header">
-                <h1>Mis pedidos</h1>
+                <h4>Mis pedidos</h4>
               </div>
             </div>
         <?php
