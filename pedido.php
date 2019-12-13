@@ -38,6 +38,7 @@ $orderNumber = 546;
                               <button class="btn btn-lg btn-raised btn-success btn-block" data-toggle="modal" data-target="#PagoModalTran">Transaccion Bancaria</button>
                             </p>
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<<<<<<< HEAD
                       
                                     <input type="hidden" name="cmd" value="_cart">
                                     <input type="hidden" name="upload" value="1">
@@ -50,6 +51,19 @@ $orderNumber = 546;
                                     <input type="hidden" name="shipping_2" value="2.50">
                                     <input type="submit" class="btn btn-lg btn-raised btn-success btn-block" value="Paypal">
                             </form>             
+=======
+                      <input type="hidden" name="cmd" value="_cart">
+                      <input type="hidden" name="upload" value="1">
+                      <input type="hidden" name="business" value="seller@dezignerfotos.com">
+                      <input type="hidden" name="item_name_1" value="Item Name 1">
+                      <input type="hidden" name="amount_1" value="1.00">
+                      <input type="hidden" name="shipping_1" value="1.75">
+                      <input type="hidden" name="item_name_2" value="Item Name 2">
+                      <input type="hidden" name="amount_2" value='200'>
+                      <input type="hidden" name="shipping_2" value="2.50">
+                      <input type="submit" class="btn btn-lg btn-raised btn-success btn-block" value="Paypal">
+              </form>  
+>>>>>>> master
                           </div>
                         </div>
                       </div>
